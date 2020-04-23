@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+		<style>
+			body {
+				background-color: rgb(13, 13, 13);
+				text-align: center;
+				font-family: 'Manrope', sans-serif;
+				font-size: 31px;
+			}
+
+			h1 {
+				color: white;
+			}
+
+			.slider {
+				-webkit-appearance: none;
+				appearance: none;
+				width: 25%;
+				height: 25px;
+				background: rgb(13, 13, 13);
+				outline: none;
+				opacity: 0.7;
+				-webkit-transition: .2s;
+				transition: opacity .2s;
+			}
+
+			.slider:hover {
+				opacity: 1,
+			}
+
+			.slider::-webkit-slider-thumb {
+				-webkit-appearance: none;
+				appearance: none;
+				width: 25px;
+				height: 25px; 
+				background: rgb(88, 88, 88); 
+				cursor: pointer; 
+			}
+
+			.slider::-moz-range-thumb {
+				width: 25px; 
+				height: 25px; 
+				background: rgb(88, 88, 88); 
+				cursor: pointer; 
+			}
+
+			.reset {
+				background-color: rgb(44, 44, 44); 
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+			}
+		</style>
+		<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+		<script src="./index.js"></script>
+	</head>
+	<body>
+		<h1 class="title">Advisory Photo Phun Jam</h1>
+		<image id="img" height=250 style="filter: blur(50px);" src=""></image>
+		<br><br><br>
+		<input class="slider" type="range" min="0" max="50" value="50" id="bar">
+		<br><br>
+		<button class="reset" type="reset" onclick="location.reload();">New Image</button>
+		<br>
+		<p style="color: white;">What makes a triangle? Purple!</p>
+	</body>
+</html>
+
